@@ -1,0 +1,220 @@
+:root {
+  --dark-color: #19283f;
+  --main-color: #33d1cc;
+  --section-color: #eff7fa;
+  --yellow-color: #ffc400;
+  --red-color: #ff3150;
+  --transition-duration: 0.5s;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.main-btn {
+  background-color: var(--red-color);
+  color: var(--yellow-color);
+  transition: var(--transition-duration);
+}
+.main-btn:hover {
+  color: var(--red-color);
+  border: 1px solid var(--red-color);
+  background-color: transparent;
+}
+.main-heading::after {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 4px;
+  background-color: var(--main-color);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* Start NavBar */
+.navbar {
+  background-color: var(--dark-color);
+}
+.navbar .nav-link {
+  color: white;
+  transition: var(--transition-duration);
+}
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar .active,
+.navbar .nav-link:hover {
+  color: var(--main-color);
+}
+.navbar .search {
+  border-left: 2px solid var(--main-color);
+}
+/* End NavBar */
+/* Start Landing */
+.landing {
+  background-color: var(--dark-color);
+}
+/* End Landing */
+/* Start Features */
+.features .icon-holder {
+  height: 200px;
+}
+.features .icon-holder svg {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.features .icon-holder .number {
+  font-size: 12rem;
+  color: var(--section-color);
+}
+.features .icon-holder .icon {
+  color: var(--main-color);
+}
+.features .feat h2 {
+  color: var(--yellow-color);
+}
+/* End Features */
+/* Start Work */
+.our-work {
+  background-color: var(--section-color);
+}
+.our-work ul .active {
+  background-color: var(--red-color);
+  color: var(--yellow-color);
+}
+.our-work ul li {
+  cursor: pointer;
+}
+.our-work ul li:hover:not(.active) {
+  color: var(--red-color);
+}
+.our-work .box {
+  overflow: hidden;
+  position: relative;
+}
+.our-work .box::before {
+  content: attr(data-work);
+  position: absolute;
+  font-weight: 700;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(51, 209, 204, 0.6);
+  width: 100%;
+  height: 100%;
+  transform: translateX(-100%);
+  transition: var(--transition-duration);
+}
+.our-work .box:hover::before {
+  transform: translateX(0);
+}
+/* End Work */
+/* Start About */
+.about .description {
+  max-width: 700px;
+}
+/* End About */
+/* Start Team */
+.team {
+  background-color: var(--section-color);
+}
+.team h3 {
+  background-color: var(--main-color);
+}
+/* End Team */
+/* Start Projects */
+.projects {
+  background-color: var(--dark-color);
+}
+/* End Projects */
+/* Start Subscripe */
+.subscripe .sub:focus {
+  outline: none;
+}
+.subscripe .sub::placeholder {
+  color: white;
+}
+.subscripe .main-btn {
+  background-color: var(--dark-color);
+  transition: var(--transition-duration);
+}
+.subscripe .main-btn:hover {
+  color: var(--dark-color);
+  background-color: transparent;
+  border: 2px solid var(--dark-color);
+}
+/* End Subscripe */
+/* Start Footer */
+footer {
+  background-color: var(--dark-color);
+}
+footer span {
+  color: var(--main-color);
+}
+footer .links ul a {
+  transition: var(--transition-duration);
+}
+footer .links ul a:hover {
+  color: white!important;
+}
+footer .icons .facebook {
+  background-color: #0d6efd!important;
+}
+footer .icons .twitter {
+  background-color: #1da1f2!important;
+}
+footer .icons .linkedin {
+  background-color: #0077b5!important;
+}
+footer .icons .youtube {
+  background-color: #ff0000!important;
+}
+footer .icons li {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .facebook {
+  transition: var(--transition-duration);
+}
+footer .facebook:hover {
+  background-color: white!important;
+  cursor: pointer;
+}
+footer .facebook:hover .facebook-i {
+  color: #0d6efd!important;
+}
+footer .twitter {
+  transition: var(--transition-duration);
+}
+footer .twitter:hover {
+  background-color: white!important;
+  cursor: pointer;
+}
+footer .twitter:hover .twitter-i {
+  color: #1da1f2!important;
+}
+footer .linkedin {
+  transition: var(--transition-duration);
+}
+footer .linkedin:hover {
+  background-color: white!important;
+  cursor: pointer;
+}
+footer .linkedin:hover .linkedin-i {
+  color: #0077b5!important;
+}
+footer .youtube {
+  transition: var(--transition-duration);
+}
+footer .youtube:hover {
+  background-color: white!important;
+  cursor: pointer;
+}
+footer .youtube:hover .youtube-i {
+  color: #ff0000!important;
+}
+/* End Footer */
